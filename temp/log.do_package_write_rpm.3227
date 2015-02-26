@@ -1,0 +1,37 @@
+DEBUG: Executing python function sstate_task_prefunc
+DEBUG: Python function sstate_task_prefunc finished
+DEBUG: Executing python function do_package_write_rpm
+DEBUG: Executing python function read_subpackage_metadata
+DEBUG: Python function read_subpackage_metadata finished
+DEBUG: Executing python function do_package_rpm
+DEBUG: Executing python function write_specfile
+NOTE: Creating EMPTY RPM Package for u-boot-fslc-dbg
+NOTE: Not creating empty RPM package for u-boot-fslc-staticdev
+NOTE: Creating EMPTY RPM Package for u-boot-fslc-dev
+NOTE: Not creating empty RPM package for u-boot-fslc-doc
+NOTE: Not creating empty RPM package for u-boot-fslc-locale
+NOTE: Creating RPM package for u-boot-fslc
+NOTE: Creating RPM package for u-boot-fslc
+DEBUG: Python function write_specfile finished
+DEBUG: Executing shell function BUILDSPEC
+Building target platforms: imx6qsabresd-poky-linux-gnueabi
+Processing files: u-boot-fslc-v2014.10+git0+5fd0b607d0-r0.imx6qsabresd
+Processing files: u-boot-fslc-dbg-v2014.10+git0+5fd0b607d0-r0.imx6qsabresd
+Processing files: u-boot-fslc-dev-v2014.10+git0+5fd0b607d0-r0.imx6qsabresd
+Checking for unpackaged file(s): /home/jpnair/workspace/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/../lib/rpm/check-files /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/package
+Wrote: /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/deploy-rpms/imx6qsabresd/u-boot-fslc-v2014.10+git0+5fd0b607d0-r0.imx6qsabresd.rpm
+Wrote: /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/deploy-rpms/imx6qsabresd/u-boot-fslc-dbg-v2014.10+git0+5fd0b607d0-r0.imx6qsabresd.rpm
+Wrote: /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/deploy-rpms/imx6qsabresd/u-boot-fslc-dev-v2014.10+git0+5fd0b607d0-r0.imx6qsabresd.rpm
+DEBUG: Shell function BUILDSPEC finished
+DEBUG: Python function do_package_rpm finished
+DEBUG: Python function do_package_write_rpm finished
+DEBUG: Executing python function sstate_task_postfunc
+DEBUG: Staging files from /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/deploy-rpms to /home/jpnair/workspace/fsl-community-bsp/build/tmp/deploy/rpm
+NOTE: Using umask 002 (not 22) for sstate packaging
+DEBUG: Preparing tree /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/deploy-rpms for packaging at /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/sstate-build-package_write_rpm/deploy-rpms
+DEBUG: Executing python function sstate_hardcode_path
+NOTE: Removing hardcoded paths from sstate package: 'find /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/sstate-build-package_write_rpm/ \( -name "*.la" -o -name "*-config" -o -name "*_config" \) -type f | xargs grep -l -e '/home/jpnair/workspace/fsl-community-bsp/build/tmp/sysroots/imx6qsabresd' | tee /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/sstate-build-package_write_rpm/fixmepath | xargs --no-run-if-empty sed -i -e 's:/home/jpnair/workspace/fsl-community-bsp/build/tmp/sysroots/imx6qsabresd:FIXMESTAGINGDIRHOST:g''
+DEBUG: Python function sstate_hardcode_path finished
+DEBUG: Executing shell function sstate_create_package
+DEBUG: Shell function sstate_create_package finished
+DEBUG: Python function sstate_task_postfunc finished

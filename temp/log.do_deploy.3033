@@ -1,0 +1,13 @@
+DEBUG: Executing python function sstate_task_prefunc
+DEBUG: Python function sstate_task_prefunc finished
+DEBUG: Executing shell function do_deploy
+DEBUG: Shell function do_deploy finished
+DEBUG: Executing python function sstate_task_postfunc
+DEBUG: Staging files from /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/deploy-u-boot-fslc to /home/jpnair/workspace/fsl-community-bsp/build/tmp/deploy/images/imx6qsabresd
+DEBUG: Preparing tree /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/deploy-u-boot-fslc for packaging at /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/sstate-build-deploy/deploy-u-boot-fslc
+DEBUG: Executing python function sstate_hardcode_path
+NOTE: Removing hardcoded paths from sstate package: 'find /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/sstate-build-deploy/ \( -name "*.la" -o -name "*-config" -o -name "*_config" \) -type f | xargs grep -l -e '/home/jpnair/workspace/fsl-community-bsp/build/tmp/sysroots/imx6qsabresd' | tee /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/sstate-build-deploy/fixmepath | xargs --no-run-if-empty sed -i -e 's:/home/jpnair/workspace/fsl-community-bsp/build/tmp/sysroots/imx6qsabresd:FIXMESTAGINGDIRHOST:g''
+DEBUG: Python function sstate_hardcode_path finished
+DEBUG: Executing shell function sstate_create_package
+DEBUG: Shell function sstate_create_package finished
+DEBUG: Python function sstate_task_postfunc finished

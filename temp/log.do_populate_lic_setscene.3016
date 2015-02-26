@@ -1,0 +1,11 @@
+DEBUG: Executing python function do_populate_lic_setscene
+DEBUG: Executing shell function sstate_unpack_package
+license-destdir/
+license-destdir/u-boot-fslc/
+license-destdir/u-boot-fslc/README
+license-destdir/u-boot-fslc/generic_GPLv2
+DEBUG: Shell function sstate_unpack_package finished
+DEBUG: Executing python function sstate_hardcode_path_unpack
+DEBUG: Python function sstate_hardcode_path_unpack finished
+DEBUG: Staging files from /home/jpnair/workspace/fsl-community-bsp/build/tmp/work/imx6qsabresd-poky-linux-gnueabi/u-boot-fslc/v2014.10+gitAUTOINC+5fd0b607d0-r0/license-destdir to /home/jpnair/workspace/fsl-community-bsp/build/tmp/deploy/licenses
+DEBUG: Python function do_populate_lic_setscene finished
